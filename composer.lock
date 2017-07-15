@@ -1449,12 +1449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rhosocial/yii2-assets.git",
-                "reference": "22a3023c993a1944dd17fb38c43d13b439bc262c"
+                "reference": "df545fc539d50ac7cf7898c125b11144f7dde03c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rhosocial/yii2-assets/zipball/22a3023c993a1944dd17fb38c43d13b439bc262c",
-                "reference": "22a3023c993a1944dd17fb38c43d13b439bc262c",
+                "url": "https://api.github.com/repos/rhosocial/yii2-assets/zipball/df545fc539d50ac7cf7898c125b11144f7dde03c",
+                "reference": "df545fc539d50ac7cf7898c125b11144f7dde03c",
                 "shasum": ""
             },
             "require": {
@@ -1505,7 +1505,7 @@
                 "rhosocial",
                 "yii2"
             ],
-            "time": "2017-07-15 09:14:38"
+            "time": "2017-07-15 09:27:12"
         },
         {
             "name": "rhosocial/yii2-base-models",
