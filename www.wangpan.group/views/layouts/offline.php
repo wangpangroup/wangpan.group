@@ -21,7 +21,7 @@ use yii\helpers\Html;
         <meta name="description" content="Wangpan Group, used for sharing links.">
         <meta name="author" content="vistart">
         <link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/narrow-jumbotron.css" rel="stylesheet">
+        <link href="<?= Yii::getAlias("@web") ?>/css/narrow-jumbotron.css" rel="stylesheet">
         <link href="favicon.ico" rel="icon">
         <title><?= Html::encode(Yii::$app->name) ?></title>
     </head>
@@ -58,7 +58,9 @@ use yii\helpers\Html;
                 <div style="margin:0 auto; text-align:center">© vistart 2017</div>
             </footer>
         </div>
-        <?= \vistart\Widgets\CnzzWidget::widget(['cnzzCode' => Yii::$app->params['cnzz'], 'host' => 'www.wangpan.group']) ?>
+        <div style="display: none">
+            <?= \vistart\Widgets\CnzzWidget::widget(['cnzzCode' => Yii::$app->params['cnzz'], 'host' => 'www.wangpan.group']) ?>
+        </div>
         <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdn.bootcss.com/tether/1.4.0/js/tether.min.js"></script>
         <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
