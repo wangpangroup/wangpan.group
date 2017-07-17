@@ -18,7 +18,7 @@ use yii\helpers\Html;
 ?>
 
 <?php if ($place == SiteLogoWidget::PLACE_TOP_MENU): ?>
-    <a class="navbar-brand" href="<?= Yii::$app->multiDomainsManager->get('www')->createAbsoluteUrl(['site/index']); ?>" id="text-logo">
+    <a class="navbar-brand" href="<?= Yii::$app->homeUrl; ?>" id="text-logo">
         <?= Html::encode(Yii::$app->name); ?>
     </a>
 <?php elseif ($place == SiteLogoWidget::PLACE_LOGIN): ?>

@@ -48,9 +48,7 @@ $this->beginPage();
         </div>
         <footer class="footer">
             <div class="container">
-                <p class="pull-left">&copy; wangpangroup <?= date('Y') ?></p>
-
-                <p class="pull-right"><?= Yii::powered() ?></p>
+                <?= \vistart\Widgets\CnzzWidget::widget(['cnzzCode' => Yii::$app->params['cnzz'], 'host' => Yii::$app->request->serverName]) ?>
             </div>
         </footer>
         <?php $this->endBody() ?>

@@ -12,7 +12,7 @@
 
 namespace common\components\web;
 
-use yii\helpers\Url;
+use Yii;
 use yii\web\Application as WebApplication;
 
 /**
@@ -41,6 +41,8 @@ class Application extends WebApplication
             'user' => ['class' => 'common\components\web\SSOUser'],
         ]);
     }
+
+    protected $_homeUrl;
 
     /**
      * @return string
