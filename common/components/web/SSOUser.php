@@ -29,7 +29,7 @@ use yii\web\ForbiddenHttpException;
  *              'baseDomain' => <Base Domain>,
  *         ],
  *         'user' => [
- *             'class' => 'common\components\SSOUser',
+ *             'class' => 'common\components\web\SSOUser',
  *             'enableAutoLogin' => true,
  *             'identityClass' => <User Identity Class>,
  *             'identityCookie' => [

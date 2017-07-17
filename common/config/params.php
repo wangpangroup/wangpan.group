@@ -6,4 +6,5 @@ return [
     'devEmail' => 'dev@wangpan.group',
     'user.passwordResetTokenExpire' => 3600,
     'baseDomain' => BASE_DOMAIN,
+    'cnzz' => require(__DIR__ . '/base/cnzz.php'),
 ];
