@@ -15,6 +15,7 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'urlManager' => require('urlManager.php'),
     ],
     'params' => $params,
 ];

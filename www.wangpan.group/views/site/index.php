@@ -10,6 +10,6 @@ $this->title = '网盘组';
     </div>
 
     <div class="body-content">
-
+        <?= Yii::$app->multiDomainsManager->getCurrent()->createAbsoluteUrl(['offline/under-construction']) ?>
     </div>
 </div>

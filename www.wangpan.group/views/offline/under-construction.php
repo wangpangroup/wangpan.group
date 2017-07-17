@@ -10,13 +10,11 @@
  * @license https://vistart.me/license/
  */
 
-return [
-    'class' => \common\components\web\MultiDomainsUrlManager::class,
-    'showScriptName' => false,
-    'enablePrettyUrl' => true,
-    'enableStrictParsing' => false,
-    'suffix' => '.html',
-    'rules' => [
-        '' => 'site/index',
-    ],
-];
+?>
+
+<p>
+    <?= "该网站正在建设中……" ?>
+</p>
+<p>
+    <?= "This website is under construction..." ?>
+</p>

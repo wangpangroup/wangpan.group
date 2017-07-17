@@ -9,6 +9,7 @@ $config = [
         'request' => getParamsFromFile(__DIR__ . '/request/request-local.php'),
         'session' => getParamsFromFile(__DIR__ . '/redis/session-local.php'),
     ],
+    'catchAll' => null,
 ];
 
 if (!YII_ENV_TEST) {

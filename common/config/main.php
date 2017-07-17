@@ -7,6 +7,7 @@ return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'bootstrap' => require(__DIR__ . '/bootstrap/bootstrap.php'),
     'modules' => require(__DIR__ . '/modules/modules.php'),
+    'catchAll' => ['offline/under-construction'],
     'components' => [
         'assetManager' => require(__DIR__ . '/assetManager/assetManager.php'),
         'authManager' => require(__DIR__ . '/authManager/authManager.php'),
