@@ -22,7 +22,7 @@ use yii\helpers\Html;
         <meta name="author" content="vistart">
         <link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="<?= Yii::getAlias("@web") ?>/css/narrow-jumbotron.css" rel="stylesheet">
-        <link href="favicon.ico" rel="icon">
+        <link href="<?= Yii::getAlias("@web") ?>/favicon.ico" rel="icon">
         <title><?= Html::encode(Yii::$app->name) ?></title>
     </head>
     <body>
@@ -55,7 +55,9 @@ use yii\helpers\Html;
                 </div>
             </div>
             <footer class="footer">
-                <div style="margin:0 auto; text-align:center">© vistart 2017</div>
+                <div style="margin:0 auto; text-align:center">
+                    <?= isset(Yii::$app->params['beian']) ? Html::a(Yii::$app->params['beian'], 'http://www.miitbeian.gov.cn', ['target' => '_blank']) . ' | ' : '' ?>
+                    © <?= Html::a('vistart', 'https://vistart.me', ['target' => '_blank']) ?> 2017</div>
             </footer>
         </div>
         <div style="display: none">
