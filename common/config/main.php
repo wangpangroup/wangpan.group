@@ -21,7 +21,7 @@ return [
         'mailer' => require(__DIR__ . '/mailer/mailer.php'),
         'multiDomainsManager' => require(__DIR__ . '/mdManager/multiDomainsManager.php'),
         'redis' => require(__DIR__ . '/redis/redis.php'),
-        'request' => require(__DIR__ . '/request/request-local.php'),
+        'request' => getParamsFromFile(__DIR__ . '/request/request-local.php', require(__DIR__ . '/request/request.php')),
         'session' => require(__DIR__ . '/redis/session.php'),
         'user' => require(__DIR__ . '/user/user.php'),
     ],

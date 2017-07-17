@@ -11,8 +11,10 @@
  */
 
 return [
+    'class' => \common\components\web\MultiDomainsUrlManager::class,
     'showScriptName' => false,
     'enablePrettyUrl' => true,
+    'enableStrictParsing' => false,
     'rules' => [
         '' => 'site/index',
     ],

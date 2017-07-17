@@ -963,7 +963,7 @@
         },
         {
             "name": "bower-asset/typeahead.js",
-            "version": "v0.11.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twitter/typeahead.js.git",
@@ -973,12 +973,24 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/twitter/typeahead.js/zipball/588440f66559714280628a4f9799f0c4eb880a4a",
                 "reference": "588440f66559714280628a4f9799f0c4eb880a4a",
-                "shasum": null
+                "shasum": ""
             },
             "require": {
                 "bower-asset/jquery": ">=1.7"
             },
-            "type": "bower-asset"
+            "require-dev": {
+                "bower-asset/jasmine-ajax": "~1.3.1",
+                "bower-asset/jasmine-jquery": "~1.5.2",
+                "bower-asset/jquery": "~1.7"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "dist/typeahead.bundle.js",
+                "branch-alias": {
+                    "dev-master": "0.11.1-dev"
+                }
+            },
+            "time": "2015-04-27 04:02:14"
         },
         {
             "name": "bower-asset/yii2-pjax",
@@ -1008,12 +1020,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cebe/markdown.git",
-                "reference": "7e6fce6b656603c1289a45a41bca065ee8cf3058"
+                "reference": "28e8912a41b527e12db596026aaf0a355044d890"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cebe/markdown/zipball/7e6fce6b656603c1289a45a41bca065ee8cf3058",
-                "reference": "7e6fce6b656603c1289a45a41bca065ee8cf3058",
+                "url": "https://api.github.com/repos/cebe/markdown/zipball/28e8912a41b527e12db596026aaf0a355044d890",
+                "reference": "28e8912a41b527e12db596026aaf0a355044d890",
                 "shasum": ""
             },
             "require": {
@@ -1060,7 +1072,7 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2017-07-03 13:08:28"
+            "time": "2017-07-16 21:15:25"
         },
         {
             "name": "endroid/qrcode",
@@ -2023,12 +2035,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "6a5f4b947efbd57e937210db84fc51a1fbf16d9f"
+                "reference": "f73a16c1c3077d6b7efb5579c5950fad8735cbab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/6a5f4b947efbd57e937210db84fc51a1fbf16d9f",
-                "reference": "6a5f4b947efbd57e937210db84fc51a1fbf16d9f",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/f73a16c1c3077d6b7efb5579c5950fad8735cbab",
+                "reference": "f73a16c1c3077d6b7efb5579c5950fad8735cbab",
                 "shasum": ""
             },
             "require": {
@@ -2115,7 +2127,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-07-14 09:23:03"
+            "time": "2017-07-16 15:06:25"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -2523,69 +2535,6 @@
                 "parser"
             ],
             "time": "2016-10-30 11:50:56"
-        },
-        {
-            "name": "bower-asset/jquery.inputmask",
-            "version": "4.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/RobinHerbots/Inputmask.git",
-                "reference": "abbd5663ea575079cb3252a40a5fedd6a4233881"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/abbd5663ea575079cb3252a40a5fedd6a4233881",
-                "reference": "abbd5663ea575079cb3252a40a5fedd6a4233881",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.7"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "./dist/inputmask/inputmask.js",
-                    "./dist/inputmask/inputmask.extensions.js",
-                    "./dist/inputmask/inputmask.date.extensions.js",
-                    "./dist/inputmask/inputmask.numeric.extensions.js",
-                    "./dist/inputmask/inputmask.phone.extensions.js",
-                    "./dist/inputmask/jquery.inputmask.js",
-                    "./dist/inputmask/global/document.js",
-                    "./dist/inputmask/global/window.js",
-                    "./dist/inputmask/phone-codes/phone.js",
-                    "./dist/inputmask/phone-codes/phone-be.js",
-                    "./dist/inputmask/phone-codes/phone-nl.js",
-                    "./dist/inputmask/phone-codes/phone-ru.js",
-                    "./dist/inputmask/phone-codes/phone-uk.js",
-                    "./dist/inputmask/dependencyLibs/inputmask.dependencyLib.jqlite.js",
-                    "./dist/inputmask/dependencyLibs/inputmask.dependencyLib.jquery.js",
-                    "./dist/inputmask/dependencyLibs/inputmask.dependencyLib.js",
-                    "./dist/inputmask/bindings/inputmask.binding.js"
-                ],
-                "bower-asset-ignore": [
-                    "**/*",
-                    "!dist/*",
-                    "!dist/inputmask/*",
-                    "!dist/min/*",
-                    "!dist/min/inputmask/*"
-                ],
-                "branch-alias": {
-                    "dev-4.x": "4.0.1-patch21-dev"
-                }
-            },
-            "license": [
-                "http://opensource.org/licenses/mit-license.php"
-            ],
-            "description": "Inputmask is a javascript library which creates an input mask.  Inputmask can run against vanilla javascript, jQuery and jqlite.",
-            "keywords": [
-                "form",
-                "input",
-                "inputmask",
-                "jquery",
-                "mask",
-                "plugins"
-            ],
-            "time": "2017-07-14 09:46:07"
         },
         {
             "name": "codeception/base",
@@ -3125,22 +3074,22 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.1.1",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e"
+                "reference": "46f7e8bb075036c92695b15a1ddb6971c751e585"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/8331b5efe816ae05461b7ca1e721c01b46bafb3e",
-                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/46f7e8bb075036c92695b15a1ddb6971c751e585",
+                "reference": "46f7e8bb075036c92695b15a1ddb6971c751e585",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5",
                 "phpdocumentor/reflection-common": "^1.0@dev",
-                "phpdocumentor/type-resolver": "^0.2.0",
+                "phpdocumentor/type-resolver": "^0.4.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
@@ -3166,24 +3115,24 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-09-30T07:12:33+00:00"
+            "time": "2017-07-15T11:38:20+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.2.1",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb"
+                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb",
-                "reference": "e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
+                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5",
+                "php": "^5.5 || ^7.0",
                 "phpdocumentor/reflection-common": "^1.0"
             },
             "require-dev": {
@@ -3213,7 +3162,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2016-11-25T06:54:22+00:00"
+            "time": "2017-07-14T14:27:02+00:00"
         },
         {
             "name": "phpspec/php-diff",
