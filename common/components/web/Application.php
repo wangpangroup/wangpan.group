@@ -12,6 +12,7 @@
 
 namespace common\components\web;
 
+use yii\helpers\Url;
 use yii\web\Application as WebApplication;
 
 /**
@@ -39,5 +40,21 @@ class Application extends WebApplication
             'multiDomainsManager' => ['class' => 'common\components\web\MultiDomainsManager'],
             'user' => ['class' => 'common\components\web\SSOUser'],
         ]);
+    }
+
+    /**
+     * @return string
+     */
+    public function getHomeUrl()
+    {
+        if ($this->_homeUrl === null) {
+            $home = Yii::$app->multiDomainsManager->getHome();
+            if ($home) {
+                return $home->createAbsoluteUrl(['/site/index']);
+            }
+            return Yii::$app->urlManager->createAbsoluteUrl(['/site/index']);
+        }
+
+        return $this->_homeUrl;
     }
 }

@@ -13,4 +13,4 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../config/main.php'),
     getParamsFromFile(__DIR__ . '/../config/main-local.php')
 );
-(new yii\web\Application($config))->run();
+(new \common\components\web\Application($config))->run();

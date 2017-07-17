@@ -9,13 +9,15 @@
  * @copyright Copyright (c) 2016 - 2017 vistart
  * @license https://vistart.me/license/
  */
+
+use common\widgets\SiteLogoWidget;
 use common\widgets\topbar\AccountDropdownWidget;
-use yii\helpers\Html;
+
 ?>
 <div id="topbar-first" class="topbar">
     <div class="container">
         <div class="topbar-brand hidden-xs">
-            <?= Html::a(Yii::$app->name, Yii::$app->multiDomainsManager->get('www')->createAbsoluteUrl(['site/index']), ['class' => 'navbar-brand', 'id' => 'text-logo']) ?>
+            <?= SiteLogoWidget::widget(['place' => SiteLogoWidget::PLACE_TOP_MENU]) ?>
         </div>
         <div class="topbar-actions pull-right">
             <?= AccountDropdownWidget::widget() ?>

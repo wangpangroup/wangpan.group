@@ -106,9 +106,14 @@ class MultiDomainsManager extends Component
     public $currentDomain = '';
 
     /**
+     * @var string
+     */
+    public $homeDomain = 'www';
+
+    /**
      * Get UrlManager component of specified sub-domain application.
      * @param string $subdomain
-     * @return UrlManager
+     * @return MultiDomainsUrlManager
      */
     public function get($subdomain = '')
     {
@@ -139,10 +144,20 @@ class MultiDomainsManager extends Component
 
     /**
      * Get URL Manager of current domain web application.
-     * @return UrlManager url manager instance.
+     * @return MultiDomainsUrlManager url manager instance.
      */
     public function getCurrent()
     {
         return $this->get($this->currentDomain) ? : Yii::$app->urlManager;
+    }
+
+    /**
+     * Get home URL Manager.
+     * You should check whether the return value is null or not before using.
+     * @return MultiDomainsUrlManager|null
+     */
+    public function getHome()
+    {
+        return $this->get($this->homeDomain) ? : null;
     }
 }

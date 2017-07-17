@@ -11,6 +11,7 @@
  */
 
 return [
+    'class' => \common\components\web\MultiDomainsUrlManager::class,
     'showScriptName' => false,
     'enablePrettyUrl' => true,
     'rules' => [
